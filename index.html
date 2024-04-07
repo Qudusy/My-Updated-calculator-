@@ -5,40 +5,30 @@
     <metacharset = utf-8>
     <title>My Calculator</title>
     <link rel = "stylesheet" href = "mycal.css">
-    <script src = "mycal.js"></script>
   </head>
   <body onload = "clearAll()">
-    <table>
-      <caption><input type="text"  pattern="\d*" disabled  id = "input"></caption>
-      <tr>
-        <td><button class = "bitwise" onclick = "clearAll()">AC</button></td>
-        <td><button onclick = "backSpace()" class = "bitwise">&#9003;</button></td>
-        <td><button class = "bitwise" onclick = "addOperator('%')">%</button></td>
-        <td><button class = "opera" onclick="addOperator('/')">&#247;</button></td>
-      </tr>
-      <tr>
-        <td><button onclick = "addNumber(7)">7</button></td>
-        <td><button onclick = "addNumber(8)">8</button></td>
-        <td><button onclick = "addNumber(9)">9</button></td>
-        <td><button class="opera" onclick = "addOperator('*')">&times;</button></td>
-      </tr>
-      <tr>
-        <td><button onclick = "addNumber(4)">4</button></td>
-        <td><button onclick = "addNumber(5)">5</button></td>
-        <td><button onclick = "addNumber(6)">6</button></td>
-        <td><button class="opera" onclick = "addOperator('-')">&minus;</button></td>
-      </tr>
-      <tr>
-        <td><button onclick = "addNumber(1)">1</button></td>
-        <td><button onclick = "addNumber(2)">2</button></td>
-        <td><button onclick = "addNumber(3)">3</button></td>
-        <td><button class = "opera" onclick = "addOperator('+')">+</button></td>
-      </tr>
-      <tr>
-        <td colspan = "2" ><button class ="zeroButton" onclick = addNumber(0)>0</button></td>
-        <td><button onclick = "addOperator('.')">.</button></td>
-        <td><button class = "opera" onclick = "equalTo()">=</button></td>
-      </tr>
-    </table>
+    <div>
+        <input type="text"  pattern="\d*" disabled  id = "input">
+        <button class = "bitwise" onclick = "clearAll()">AC</button>
+        <button onclick = "backSpace()" class = "bitwise">&#9003;</button>
+        <button class = "bitwise" onclick = "addOperator('%')">%</button>
+        <button class = "operator" onclick="addOperator('/')">&#247;</button>
+        <button onclick = "addNumber('7')">7</button>
+        <button onclick = "addNumber('8')">8</button>
+        <button onclick = "addNumber('9')">9</button>
+        <button class="operator" onclick = "addOperator('*')">&times;</button>
+        <button onclick = "addNumber('4')">4</button>
+        <button onclick = "addNumber('5')">5</button>
+        <button onclick = "addNumber('6')">6</button>
+        <button class="operator" onclick = "addOperator('-')">&minus;</button>
+        <button onclick = "addNumber('1')">1</button>
+        <button onclick = "addNumber('2')">2</button>
+        <button onclick = "addNumber('3')">3</button>
+        <button class = "operator" onclick = "addOperator('+')">+</button>
+        <button class ="zero" onclick = "addNumber('0')">0</button>
+        <button onclick = "addOperator('.')">.</button>
+        <button class = "operator" onclick="calculate()">=</button>
+    </div>
+    <script src = "mycal.js"></script>
   </body>
 </html>
