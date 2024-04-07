@@ -16,7 +16,7 @@ function addOperator(operator){
   document.getElementById('input').value += operator;
 }
 
-function equalTo(){
+function calculate(){
   const result = eval(document.getElementById('input').value);
   document.getElementById('input').value = result;
 }
