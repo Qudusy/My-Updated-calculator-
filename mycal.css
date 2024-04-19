@@ -6,7 +6,7 @@ button {
   width: 20%; /* Adjust width using percentages */
   height: 60px;
   background-color: rgb(50 50 50);
-  font-size: 15vw; /* Adjust font size using vw units */
+  font-size: 12vw; /* Adjust font size using vw units */
   color: white;
   margin-bottom: 2%;
 }
@@ -45,7 +45,7 @@ button.zero {
   width: 45%; /* Adjust width using percentages */
   text-align: left;
   padding-left: 5%; /* Adjust padding using percentages */
-  border-radius: 14px;
+  border-radius: 30%;
 }
 
 button.operator {
