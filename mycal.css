@@ -1,69 +1,63 @@
 button {
-  border: none;
-  border-radius: 100%;
-  margin-left: 3.5%; /* Adjust margins using percentages */
-  margin-top: 2%;
-  width: 20%; /* Adjust width using percentages */
-  height: 60px;
+  border-radius: 100px;
+  margin-left: 13px;
+  margin-top: 8px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(50 50 50);
-  font-size: 12vw; /* Adjust font size using vw units */
+  font-size: 30px;
   color: white;
-  margin-bottom: 2%;
+  border: none;
+  margin-bottom: 5px;
+  outline: none;
+  cursor: pointer;
 }
 
-body {
+body{
   background-image: url(IMG-20240419-WA0008.jpg);
   background-color: black;
-  margin: 0; /* Remove default body margin */
 }
 
-input {
-  width: 95%; /* Adjust width using percentages */
+input{
+  width: 99%;
   height: 100px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0,0,0,0.2);
   border-radius: 5px;
   border: none;
   color: white;
-  font-size: 20vw; /* Adjust font size using vw units */
+  font-size: 70px;
   text-align: right;
-  margin: auto; /* Center the input horizontally */
-  margin-left: 12px;
 }
 
-div {
-  width: 90%; /* Adjust width using percentages */
+div{
+  width: 270px;
+  height: 100%;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: auto;
-  margin-top: 10vh; /* Adjust margin using viewport height units */
+  margin-top: 1.5cm;
   border-style: solid;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.5);
   border-image: linear-gradient(to bottom, blue, red, purple);
-  border-image-alpha: 0.3;
   border-image-slice: 1;
 }
 
-button.zero {
-  width: 45%; /* Adjust width using percentages */
+button.zero{
+  width: 117px;
   text-align: left;
-  padding-left: 5%; /* Adjust padding using percentages */
-  border-radius: 30%;
+  padding-left: 20px; 
 }
 
-button.operator {
+button.operator{
   background-color: orange;
 }
 
-button.bitwise {
+button.bitwise{
   background-color: #aaaaaa;
   color: black;
-}
-
-@media screen and (max-width: 600px) {
-  /* Adjust styles for screens smaller than 600px wide */
-  input {
-    font-size: 20vw; /* Adjust font size using vw units */
-  }
-  
-  div {
-    width: 95%; /* Adjust width using percentages */
-  }
 }
