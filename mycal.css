@@ -57,7 +57,7 @@ button.bitwise {
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   /* Adjust styles for screens smaller than 600px wide */
   input {
     font-size: 20vw; /* Adjust font size using vw units */
